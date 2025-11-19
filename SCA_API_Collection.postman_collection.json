@@ -1,0 +1,833 @@
+{
+  "info": {
+    "name": "Spy Cat Agency API",
+    "description": "Complete API testing collection for SCA Management System",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Spy Cats",
+      "item": [
+        {
+          "name": "Create Spy Cat - Valid Breed (Siamese)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Agent Whiskers\",\n  \"years_of_experience\": 5,\n  \"breed\": \"Siamese\",\n  \"salary\": 50000.00\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/cats/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "cats", ""]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Spy Cat - Valid Breed (Persian)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Agent Shadow\",\n  \"years_of_experience\": 7,\n  \"breed\": \"Persian\",\n  \"salary\": 60000.00\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/cats/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "cats", ""]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Spy Cat - Valid Breed (Maine Coon)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Agent Tiger\",\n  \"years_of_experience\": 4,\n  \"breed\": \"Maine Coon\",\n  \"salary\": 55000.00\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/cats/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "cats", ""]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Spy Cat - Valid Breed (British Shorthair)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Agent Mittens\",\n  \"years_of_experience\": 6,\n  \"breed\": \"British Shorthair\",\n  \"salary\": 52000.00\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/cats/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "cats", ""]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Spy Cat - INVALID Breed (SuperCat)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Agent Test\",\n  \"years_of_experience\": 2,\n  \"breed\": \"SuperCat\",\n  \"salary\": 40000.00\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/cats/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "cats", ""]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Spy Cat - INVALID Breed (Golden Retriever)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Agent Spot\",\n  \"years_of_experience\": 3,\n  \"breed\": \"Golden Retriever\",\n  \"salary\": 45000.00\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/cats/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "cats", ""]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Spy Cat - INVALID Breed (Typo: Siameze)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Agent Fuzzy\",\n  \"years_of_experience\": 5,\n  \"breed\": \"Siameze\",\n  \"salary\": 48000.00\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/cats/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "cats", ""]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "List All Spy Cats",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/cats/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "cats", ""]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Single Spy Cat",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/cats/1/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "cats", "1", ""]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Spy Cat Salary",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"salary\": 55000.00\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/cats/1/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "cats", "1", ""]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Spy Cat",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/cats/1/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "cats", "1", ""]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Missions",
+      "item": [
+        {
+          "name": "Create Mission - 1 Target (Minimum)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"targets\": [\n    {\n      \"name\": \"Dr. Evil\",\n      \"country\": \"Russia\",\n      \"notes\": \"High priority target\"\n    }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/missions/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "missions", ""]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Mission - 2 Targets",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"targets\": [\n    {\n      \"name\": \"Target Alpha\",\n      \"country\": \"USA\",\n      \"notes\": \"Initial intelligence notes\"\n    },\n    {\n      \"name\": \"Target Beta\",\n      \"country\": \"UK\",\n      \"notes\": \"Monitor communications\"\n    }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/missions/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "missions", ""]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Mission - 3 Targets (Maximum)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"targets\": [\n    {\n      \"name\": \"Target Alpha\",\n      \"country\": \"USA\",\n      \"notes\": \"Gather intelligence on location\"\n    },\n    {\n      \"name\": \"Target Beta\",\n      \"country\": \"UK\",\n      \"notes\": \"Monitor communications\"\n    },\n    {\n      \"name\": \"Target Gamma\",\n      \"country\": \"France\",\n      \"notes\": \"Track movements\"\n    }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/missions/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "missions", ""]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Mission - INVALID 0 Targets",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"targets\": []\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/missions/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "missions", ""]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Mission - INVALID 4 Targets",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"targets\": [\n    {\"name\": \"Target 1\", \"country\": \"USA\", \"notes\": \"\"},\n    {\"name\": \"Target 2\", \"country\": \"UK\", \"notes\": \"\"},\n    {\"name\": \"Target 3\", \"country\": \"France\", \"notes\": \"\"},\n    {\"name\": \"Target 4\", \"country\": \"Germany\", \"notes\": \"\"}\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/missions/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "missions", ""]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "List All Missions",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/missions/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "missions", ""]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Single Mission",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/missions/1/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "missions", "1", ""]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Assign Cat to Mission",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"cat_id\": 1\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/missions/1/assign_cat/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "missions", "1", "assign_cat", ""]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Assign Cat - INVALID (Already on Mission)",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"cat_id\": 1\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/missions/2/assign_cat/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "missions", "2", "assign_cat", ""]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Mission - Unassigned",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/missions/2/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "missions", "2", ""]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Mission - INVALID (Assigned to Cat)",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/missions/1/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "missions", "1", ""]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Targets",
+      "item": [
+        {
+          "name": "Update Target Notes",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"notes\": \"Target spotted at coordinates 51.5074, -0.1278. Proceeding with surveillance.\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/missions/1/targets/1/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "missions", "1", "targets", "1", ""]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Mark Target as Complete",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"is_complete\": true\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/missions/1/targets/1/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "missions", "1", "targets", "1", ""]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Notes & Complete Together",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"notes\": \"Mission accomplished. All data collected.\",\n  \"is_complete\": true\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/missions/1/targets/2/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "missions", "1", "targets", "2", ""]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Notes - INVALID (Target Complete)",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"notes\": \"Trying to update completed target\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/missions/1/targets/1/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "missions", "1", "targets", "1", ""]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Complete Workflow Test",
+      "item": [
+        {
+          "name": "1. Create Cat",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 201\", function () {",
+                  "    pm.response.to.have.status(201);",
+                  "});",
+                  "",
+                  "pm.test(\"Response has cat ID\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData).to.have.property('id');",
+                  "    pm.environment.set(\"cat_id\", jsonData.id);",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Agent Workflow\",\n  \"years_of_experience\": 5,\n  \"breed\": \"Siamese\",\n  \"salary\": 50000.00\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/cats/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "cats", ""]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "2. Create Mission with 2 Targets",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 201\", function () {",
+                  "    pm.response.to.have.status(201);",
+                  "});",
+                  "",
+                  "var jsonData = pm.response.json();",
+                  "pm.environment.set(\"mission_id\", jsonData.id);",
+                  "pm.environment.set(\"target1_id\", jsonData.targets[0].id);",
+                  "pm.environment.set(\"target2_id\", jsonData.targets[1].id);"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"targets\": [\n    {\n      \"name\": \"Target One\",\n      \"country\": \"USA\",\n      \"notes\": \"Initial notes\"\n    },\n    {\n      \"name\": \"Target Two\",\n      \"country\": \"UK\",\n      \"notes\": \"\"\n    }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/missions/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "missions", ""]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "3. Assign Cat to Mission",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "",
+                  "pm.test(\"Mission has cat assigned\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.cat).to.not.be.null;",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"cat_id\": {{cat_id}}\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/missions/{{mission_id}}/assign_cat/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "missions", "{{mission_id}}", "assign_cat", ""]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "4. Update Target 1 Notes",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"notes\": \"Updated intelligence: Target located\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/missions/{{mission_id}}/targets/{{target1_id}}/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "missions", "{{mission_id}}", "targets", "{{target1_id}}", ""]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "5. Complete Target 1",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"is_complete\": true\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/missions/{{mission_id}}/targets/{{target1_id}}/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "missions", "{{mission_id}}", "targets", "{{target1_id}}", ""]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "6. Try Update Target 1 Notes (Should Fail)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 400\", function () {",
+                  "    pm.response.to.have.status(400);",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"notes\": \"Should not work\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/missions/{{mission_id}}/targets/{{target1_id}}/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "missions", "{{mission_id}}", "targets", "{{target1_id}}", ""]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "7. Complete Target 2 (Auto-complete Mission)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"is_complete\": true\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/missions/{{mission_id}}/targets/{{target2_id}}/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "missions", "{{mission_id}}", "targets", "{{target2_id}}", ""]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "8. Verify Mission is Complete",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Mission is complete\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.is_complete).to.be.true;",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/missions/{{mission_id}}/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "missions", "{{mission_id}}", ""]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "9. Try Delete Assigned Mission (Should Fail)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 400\", function () {",
+                  "    pm.response.to.have.status(400);",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/missions/{{mission_id}}/",
+              "host": ["{{base_url}}"],
+              "path": ["api", "missions", "{{mission_id}}", ""]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:8000",
+      "type": "string"
+    }
+  ]
+}

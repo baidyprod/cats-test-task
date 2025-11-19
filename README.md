@@ -30,7 +30,9 @@ Base URL: `http://localhost:8000/api`
 
 ## Spy Cats Endpoints
 
-I have attached file 'SCA_API_Collection.postman_collection.json'. You can import it to Postman and test the app.
+[Postman collection link](https://.postman.co/workspace/My-Workspace~bc9cf8fa-f883-413d-8e00-3a7f51e7ebd5/collection/30093965-59d16deb-04fa-4005-88db-d77bb3326774?action=share&creator=30093965)
+
+I have also attached file 'SCA_API_Collection.postman_collection.json'. You can import it to Postman and test the app if the collection link doesn't work..
 
 ### 1. Create a Spy Cat
 
